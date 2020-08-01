@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Labyrinth</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <button id="bgColor" type="button" onclick="coloringGrey(event)">háttér: szürke</button>
+            <button name="check" type="button" onclick="checking(event)">Ellenőrzés</button>
+            <label for="stepCounter">Lépések száma (min: 1, max: 10<sup>7</sup>): </label>
+            <input id="stepCounter" type="number" value="" placeholder="100000" min="10" max="10000000">
+            <button name="myReset" type="button" onclick="clearWindow(event)">Reset</button>
+            <button name="startButton" type="button" onclick="start(event);">Indít</button>
+            <p id="stepCount">A megtett lépések száma: <span style="color: #7e7e7e">Let's have fun! </span>, 
+                az eddigi legrövidebb út: <span style="color: #7e7e7e" id="minimum"></span>, 
+                leghosszabb út: <span style="color: #7e7e7e" id="maximum"></span>
+            </p>
+        </form>
+        <form onclick="counter();myClick(event)">
+            <table id="table">
+
+
+
+            </table>
+        </form>
+
+        <script src="/js/labyrinthcopy.js"></script>
+    </div>
+</body>
+
+</html>
